@@ -19,7 +19,7 @@ For this usage you will need a local LLM with tools like Ollama, for instance, t
 
 ## 🗂️ Step-by-step requirements set-up
 
-### 📂 Set up your Node installation:
+### :hourglass_flowing_sand: Set up your Node installation:
 
 Download Node.js at https://nodejs.org/en/download or directly open a Terminal and execute the following commands.
 
@@ -40,25 +40,80 @@ nvm current # Should print "v22.17.0".
 # Verify npm version:
 npm -v # Should print "10.9.2".
 ```
-### 📂 Create your OpenAI Account and API key
+###  :twisted_rightwards_arrows: Create your OpenAI Account and API key
 
 1. Go to [OpenAI](https://openai.com/) and create an account or log-in if you have already one. On the log-in button select "API Platform"
 2. Go to your [Settings page](https://platform.openai.com/settings/organization/general) and select **API Keys** Section
 3. Click on **Create new secret key** and keep your key as you will need it later on your code. Be aware you won't be able to see it again, so **keep it in a safe place**
 
-### 📂 Create a Github account
+### :octocat: Create a Github account
 If you do not have a Github account, you need to create one
 
 1. Go to [Github site](https://github.com) and create your account
 2. If you are using Homebrew, just run ```brew install git``` and verify the installation running ```git --version```
 4. If you'd rather use the Git binery installer, go to [Github website](https://git-scm.com/downloads/mac) (be aware this is a binary from 4 years ago so not recommended)
 
-#### Optional: Install Homebrew
-If you'd rather use the Git package installation, install the package manager Homebrew which also will give you a way to install future packages:
+#### :beer: Optional: Install Homebrew
+If you'd rather use the Git package installation, install the package manager Homebrew which also will give you a way to install future packages. For this you have 2 main options:
 
-1.
+1. Execute ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``` and follow the instructions
+2. Download the latest Mac package version from [Hombrew git repository](https://github.com/Homebrew/brew/releases/tag/4.5.8)
    
 ### 📂 Create your Vercel account
-FIXME
+
+In you don't yet have a Vercel account, follow the following steps:
+
+1. Go to [Vercel](https://vercel.com) and click **Sign-up**
+2. Select **I'm working on personal projects**
+3. Set your name and choose **Continue with Github** so we connect Vercel and your github repositories for an easier and faster deployment
+4. Authorise Vercel to connect to Github.
+5. You're done!
+
+## 🗂️ Step-by-step app installation
+
+### Cloning mcp-chat-fronted Github repository
+
+You have the application to install in a Github repository, so you will just clone the repository to lacal and push it to your own Github. 
+
+1. Open a **Terminal** and create a new folder that will old the code for the app, for example, for **MCPChat** execute ```mkdir MCPChat```
+2. Enter that folder ```cd MCPChat``` and execute ```git repo clone JL-Amplitude/mcp-chat-frontend```
+3. Enter the new folder ```cd mcp-chat-frontend```
+4. Push it to your own Github repository executing the following commands
+
+```
+git init
+git add .
+git commit -m "Initial MCP chat frontend"
+git remote add origin https://github.com/yourusername/mcp-chat-frontend.git
+git push -u origin main
+```
+
+Now you have your code ready and pushed to Github. As next steps, we are going to deploy the app and here you have two options:
+
+1. Deploy it to a hosted infrastructure such as Vercel, a cloud platform focused on simplifying web development, specifically for building, deploying, and scaling frontend and serverless applications.
+2. Install, build and run everything locally using Node.js. 
+
+### 📂 Vercel deployment
+
+1. Go to your Vercel account dashboard and click on **Add new..." selecting **Project**
+2. In the **Import git repository**, select **Add a Github account** to add your github account
+3. In the pop-up that appears, select **Install Vercel in all repositories**
+4. Log-in with your Github account
+5. Select **mcp-chat-frontend** repository and click **Import**.
+
+   In the next screen you will see that Vercel has automatically detected it is a React Native app with the preset framework **Create React App**. Just check the **Build and Output settings** where automatically, because of the React Native framework, you will see (at least)  ```npm run build``` and ```npm install``` whcih will generate all the needed modules.
+
+6. Click in **Environment Variables** and add the OpenAI API key for it is read from the environment
+
+   - Key: REACT_APP_OPENAI_API_KEY
+   - Value: Your OpenAI API key (
+
+7. Click **Deploy**
+8. Congratulations!! You have deployed the application successfully!! Click **Continue to Dashboard**
+
+To access the app, you have the URL in the **Domains** holder in the app's dashboard. Probably you will see the main domain https://mcp-chat-frontend.vercel.app and at least 2 more, ond of them sufixxed with your username, **select the latter** to open the app.
+
+### 📂 Local deployment
 
 
+     
