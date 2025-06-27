@@ -21,7 +21,7 @@ For this usage you will need a local LLM with tools like Ollama, for instance, t
 
 ### 📂 Set up your Node installation:
 
-1. Download Node.js at https://nodejs.org/en/download or directly open a Terminal and execute the following commands.
+Download Node.js at https://nodejs.org/en/download or directly open a Terminal and execute the following commands.
 
 ```
 # Download and install nvm:
@@ -40,5 +40,13 @@ nvm current # Should print "v22.17.0".
 # Verify npm version:
 npm -v # Should print "10.9.2".
 ```
-   
-3. 
+### 📂 Create your OpenAI Account and API key
+
+1. Go to [OpenAI](https://openai.com/) and create an account or log-in if you have already one. On the log-in button select "API Platform"
+2. Go to your [Settings page](https://platform.openai.com/settings/organization/general) and select **API Keys** Section
+3. Click on **Create new secret key** and keep your key as you will need it later on your code. Be aware you won't be able to see it again, so **keep it in a safe place**
+
+### 📂 Create your Vercel account
+FIXME
+
+
