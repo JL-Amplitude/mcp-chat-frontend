@@ -76,7 +76,7 @@ In you don't yet have a Vercel account, follow the following steps:
 You have the application to install in a Github repository, so you will just clone the repository to lacal and push it to your own Github. 
 
 1. Open a **Terminal** and create a new folder that will old the code for the app, for example, for **MCPChat** execute ```mkdir MCPChat```
-2. Enter that folder ```cd MCPChat``` and execute ```git repo clone JL-Amplitude/mcp-chat-frontend```
+2. Enter that folder ```cd MCPChat``` and execute ```git clone https://github.com/JL-Amplitude/mcp-chat-frontend.git```
 3. Enter the new folder ```cd mcp-chat-frontend```
 4. Push it to your own Github repository executing the following commands
 
