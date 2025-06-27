@@ -115,5 +115,14 @@ To access the app, you have the URL in the **Domains** holder in the app's dashb
 
 ### 📂 Local deployment
 
+From a **Terminal** shell, go (stay) in the folder you cloned your code in, supossedly **mcp-chat-frontend**, and:
 
+1. Enter the folder ```cd ~/your_path/mcp-chat-frontend```
+2. Edit the ```.env``` file ```vi .env``` and change add value with your API key
+4. Execute ```npm run build```
+5. Execute ```npm install``` 
+
+This will install all the needed modules and generate the server to execute your app locally. For this, just execute ```npm start```; this will start the server in ```http://localhost:3000/``` and open the browser with the app.
+
+That's all!! Either with Vercel of local deployment, have fun!!
      
