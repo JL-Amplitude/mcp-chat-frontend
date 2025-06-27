@@ -46,6 +46,18 @@ npm -v # Should print "10.9.2".
 2. Go to your [Settings page](https://platform.openai.com/settings/organization/general) and select **API Keys** Section
 3. Click on **Create new secret key** and keep your key as you will need it later on your code. Be aware you won't be able to see it again, so **keep it in a safe place**
 
+### 📂 Create a Github account
+If you do not have a Github account, you need to create one
+
+1. Go to [Github site](https://github.com) and create your account
+2. If you are using Homebrew, just run ```brew install git``` and verify the installation running ```git --version```
+4. If you'd rather use the Git binery installer, go to [Github website](https://git-scm.com/downloads/mac) (be aware this is a binary from 4 years ago so not recommended)
+
+#### Optional: Install Homebrew
+If you'd rather use the Git package installation, install the package manager Homebrew which also will give you a way to install future packages:
+
+1.
+   
 ### 📂 Create your Vercel account
 FIXME
 
